@@ -5,7 +5,7 @@
  * Initiates a browser-based installation of Drupal.
  */
 
-use Drupal\Component\Utility\OpCodeCache;
+//use Drupal\Component\Utility\OpCodeCache;
 
 // Change the directory to the Drupal root.
 chdir('..');

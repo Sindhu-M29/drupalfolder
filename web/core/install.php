@@ -10,7 +10,7 @@
 // Change the directory to the Drupal root.
 chdir('..');
 // Store the Drupal root path.
-$root_path = realpath('');
+//$root_path = realpath('');
 
 /**
  * Global flag to indicate the site is in installation mode.
@@ -19,7 +19,7 @@ $root_path = realpath('');
  * versions prior to 5.3 can display proper PHP requirements instead of causing
  * a fatal error.
  */
-define('MAINTENANCE_MODE', 'install');
+//define('MAINTENANCE_MODE', 'install');
 
 // Exit early if an incompatible PHP version is in use, so that the user sees a
 // helpful error message rather than a white screen from any fatal errors due to
@@ -29,7 +29,7 @@ define('MAINTENANCE_MODE', 'install');
 // hardcoded minimum PHP version below (both in the version_compare() call and
 // in the printed message to the user) whenever \Drupal::MINIMUM_PHP is
 // updated.
-if (version_compare(PHP_VERSION, '7.3.0') < 0) {
+//if (version_compare(PHP_VERSION, '7.3.0') < 0) {
   print 'Your PHP installation is too old. Drupal requires at least PHP 7.3.0. See the <a href="https://www.drupal.org/docs/9/how-drupal-9-is-made-and-what-is-included/environment-requirements-of-drupal-9#s-php-version-requirement">Environment requirements of Drupal 9</a> page for more information.';
   exit;
 }
